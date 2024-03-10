@@ -31,5 +31,15 @@ namespace lab5
         {
 
         }
+
+        private void summaryButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -295,28 +295,30 @@
             // 
             // orderCompleteButton
             // 
-            orderCompleteButton.Location = new Point(652, 340);
+            orderCompleteButton.Location = new Point(643, 334);
             orderCompleteButton.Name = "orderCompleteButton";
-            orderCompleteButton.Size = new Size(75, 23);
+            orderCompleteButton.Size = new Size(128, 29);
             orderCompleteButton.TabIndex = 2;
-            orderCompleteButton.Text = "gg";
+            orderCompleteButton.Text = "Order &Complete";
             orderCompleteButton.Click += orderCompleteButton_Click;
             // 
             // summaryButton
             // 
             summaryButton.Location = new Point(643, 369);
             summaryButton.Name = "summaryButton";
-            summaryButton.Size = new Size(75, 27);
+            summaryButton.Size = new Size(128, 29);
             summaryButton.TabIndex = 1;
-            summaryButton.Text = "dd";
+            summaryButton.Text = "Summary &Report";
+            summaryButton.Click += summaryButton_Click;
             // 
             // exitButton
             // 
-            exitButton.Location = new Point(696, 415);
+            exitButton.Location = new Point(643, 404);
             exitButton.Name = "exitButton";
-            exitButton.Size = new Size(75, 23);
+            exitButton.Size = new Size(128, 29);
             exitButton.TabIndex = 0;
-            exitButton.Text = "ee";
+            exitButton.Text = "E&xit";
+            exitButton.Click += exitButton_Click;
             // 
             // JuiceBarForm
             // 
