@@ -29,35 +29,35 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            food4 = new CheckBox();
+            food3 = new CheckBox();
+            food2 = new CheckBox();
+            food1 = new CheckBox();
             label2 = new Label();
             label1 = new Label();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            checkBox8 = new CheckBox();
-            checkBox7 = new CheckBox();
-            checkBox6 = new CheckBox();
-            checkBox5 = new CheckBox();
-            checkBox4 = new CheckBox();
-            checkBox3 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox1 = new CheckBox();
-            radioButton4 = new RadioButton();
-            radioButton3 = new RadioButton();
-            radioButton2 = new RadioButton();
-            radioButton1 = new RadioButton();
+            food4fullq = new TextBox();
+            food3fullq = new TextBox();
+            food2fullq = new TextBox();
+            food1fullq = new TextBox();
+            food4halfq = new TextBox();
+            food3halfq = new TextBox();
+            food2halfq = new TextBox();
+            food1halfq = new TextBox();
+            food4fullch = new CheckBox();
+            food3fullch = new CheckBox();
+            food2fullch = new CheckBox();
+            food4halfch = new CheckBox();
+            food3halfch = new CheckBox();
+            food2halfch = new CheckBox();
+            food1fullch = new CheckBox();
+            food1halfch = new CheckBox();
             groupBox2 = new GroupBox();
+            checkBox19 = new CheckBox();
+            checkBox20 = new CheckBox();
             label3 = new Label();
-            radioButton7 = new RadioButton();
+            checkBox21 = new CheckBox();
             label4 = new Label();
-            radioButton6 = new RadioButton();
             textBox9 = new TextBox();
-            radioButton5 = new RadioButton();
             textBox10 = new TextBox();
             checkBox10 = new CheckBox();
             textBox11 = new TextBox();
@@ -69,34 +69,36 @@
             textBox14 = new TextBox();
             checkBox11 = new CheckBox();
             checkBox9 = new CheckBox();
+            button1 = new Button();
+            button2 = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(food4);
+            groupBox1.Controls.Add(food3);
+            groupBox1.Controls.Add(food2);
+            groupBox1.Controls.Add(food1);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(textBox5);
-            groupBox1.Controls.Add(textBox6);
-            groupBox1.Controls.Add(textBox7);
-            groupBox1.Controls.Add(textBox8);
-            groupBox1.Controls.Add(textBox4);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Controls.Add(checkBox8);
-            groupBox1.Controls.Add(checkBox7);
-            groupBox1.Controls.Add(checkBox6);
-            groupBox1.Controls.Add(checkBox5);
-            groupBox1.Controls.Add(checkBox4);
-            groupBox1.Controls.Add(checkBox3);
-            groupBox1.Controls.Add(checkBox2);
-            groupBox1.Controls.Add(checkBox1);
-            groupBox1.Controls.Add(radioButton4);
-            groupBox1.Controls.Add(radioButton3);
-            groupBox1.Controls.Add(radioButton2);
-            groupBox1.Controls.Add(radioButton1);
+            groupBox1.Controls.Add(food4fullq);
+            groupBox1.Controls.Add(food3fullq);
+            groupBox1.Controls.Add(food2fullq);
+            groupBox1.Controls.Add(food1fullq);
+            groupBox1.Controls.Add(food4halfq);
+            groupBox1.Controls.Add(food3halfq);
+            groupBox1.Controls.Add(food2halfq);
+            groupBox1.Controls.Add(food1halfq);
+            groupBox1.Controls.Add(food4fullch);
+            groupBox1.Controls.Add(food3fullch);
+            groupBox1.Controls.Add(food2fullch);
+            groupBox1.Controls.Add(food4halfch);
+            groupBox1.Controls.Add(food3halfch);
+            groupBox1.Controls.Add(food2halfch);
+            groupBox1.Controls.Add(food1fullch);
+            groupBox1.Controls.Add(food1halfch);
             groupBox1.Location = new Point(27, 23);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(526, 207);
@@ -104,6 +106,50 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Үндсэн хоол";
             groupBox1.Enter += groupBox1_Enter;
+            // 
+            // food4
+            // 
+            food4.AutoSize = true;
+            food4.Location = new Point(9, 159);
+            food4.Name = "food4";
+            food4.Size = new Size(159, 24);
+            food4.TabIndex = 21;
+            food4.Text = "Төмсний ороомог\t";
+            food4.UseVisualStyleBackColor = true;
+            food4.CheckedChanged += checkBox18_CheckedChanged;
+            // 
+            // food3
+            // 
+            food3.AutoSize = true;
+            food3.Location = new Point(9, 129);
+            food3.Name = "food3";
+            food3.Size = new Size(142, 24);
+            food3.TabIndex = 20;
+            food3.Text = "Будаатай хуурга";
+            food3.UseVisualStyleBackColor = true;
+            food3.CheckedChanged += food3_CheckedChanged;
+            // 
+            // food2
+            // 
+            food2.AutoSize = true;
+            food2.Location = new Point(9, 99);
+            food2.Name = "food2";
+            food2.Size = new Size(87, 24);
+            food2.TabIndex = 19;
+            food2.Text = "Тефтель";
+            food2.UseVisualStyleBackColor = true;
+            food2.CheckedChanged += food2_CheckedChanged;
+            // 
+            // food1
+            // 
+            food1.AutoSize = true;
+            food1.Location = new Point(9, 69);
+            food1.Name = "food1";
+            food1.Size = new Size(127, 24);
+            food1.TabIndex = 18;
+            food1.Text = "Гурилтай шөл";
+            food1.UseVisualStyleBackColor = true;
+            food1.CheckedChanged += checkBox15_CheckedChanged;
             // 
             // label2
             // 
@@ -123,195 +169,159 @@
             label1.TabIndex = 16;
             label1.Text = "Тоо ширхэг ";
             // 
-            // textBox5
+            // food4fullq
             // 
-            textBox5.Location = new Point(453, 166);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(40, 27);
-            textBox5.TabIndex = 15;
+            food4fullq.Location = new Point(453, 166);
+            food4fullq.Name = "food4fullq";
+            food4fullq.Size = new Size(40, 27);
+            food4fullq.TabIndex = 15;
             // 
-            // textBox6
+            // food3fullq
             // 
-            textBox6.Location = new Point(453, 133);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(40, 27);
-            textBox6.TabIndex = 14;
+            food3fullq.Location = new Point(453, 133);
+            food3fullq.Name = "food3fullq";
+            food3fullq.Size = new Size(40, 27);
+            food3fullq.TabIndex = 14;
             // 
-            // textBox7
+            // food2fullq
             // 
-            textBox7.Location = new Point(453, 103);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(40, 27);
-            textBox7.TabIndex = 13;
+            food2fullq.Location = new Point(453, 103);
+            food2fullq.Name = "food2fullq";
+            food2fullq.Size = new Size(40, 27);
+            food2fullq.TabIndex = 13;
             // 
-            // textBox8
+            // food1fullq
             // 
-            textBox8.Location = new Point(453, 70);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(40, 27);
-            textBox8.TabIndex = 12;
+            food1fullq.Location = new Point(453, 70);
+            food1fullq.Name = "food1fullq";
+            food1fullq.Size = new Size(40, 27);
+            food1fullq.TabIndex = 12;
             // 
-            // textBox4
+            // food4halfq
             // 
-            textBox4.Location = new Point(257, 163);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(40, 27);
-            textBox4.TabIndex = 11;
+            food4halfq.Location = new Point(257, 163);
+            food4halfq.Name = "food4halfq";
+            food4halfq.Size = new Size(40, 27);
+            food4halfq.TabIndex = 11;
             // 
-            // textBox3
+            // food3halfq
             // 
-            textBox3.Location = new Point(257, 130);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(40, 27);
-            textBox3.TabIndex = 10;
+            food3halfq.Location = new Point(257, 130);
+            food3halfq.Name = "food3halfq";
+            food3halfq.Size = new Size(40, 27);
+            food3halfq.TabIndex = 10;
             // 
-            // textBox2
+            // food2halfq
             // 
-            textBox2.Location = new Point(257, 100);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(40, 27);
-            textBox2.TabIndex = 9;
+            food2halfq.Location = new Point(257, 100);
+            food2halfq.Name = "food2halfq";
+            food2halfq.Size = new Size(40, 27);
+            food2halfq.TabIndex = 9;
             // 
-            // textBox1
+            // food1halfq
             // 
-            textBox1.Location = new Point(257, 67);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(40, 27);
-            textBox1.TabIndex = 2;
+            food1halfq.Location = new Point(257, 69);
+            food1halfq.Name = "food1halfq";
+            food1halfq.Size = new Size(40, 27);
+            food1halfq.TabIndex = 22;
+            food1halfq.TextChanged += food1halfq_TextChanged;
             // 
-            // checkBox8
+            // food4fullch
             // 
-            checkBox8.AutoSize = true;
-            checkBox8.Location = new Point(378, 162);
-            checkBox8.Name = "checkBox8";
-            checkBox8.Size = new Size(69, 24);
-            checkBox8.TabIndex = 8;
-            checkBox8.Text = "Бүтэн";
-            checkBox8.UseVisualStyleBackColor = true;
+            food4fullch.AutoSize = true;
+            food4fullch.Location = new Point(378, 162);
+            food4fullch.Name = "food4fullch";
+            food4fullch.Size = new Size(69, 24);
+            food4fullch.TabIndex = 8;
+            food4fullch.Text = "Бүтэн";
+            food4fullch.UseVisualStyleBackColor = true;
+            food4fullch.CheckedChanged += food4fullch_CheckedChanged;
             // 
-            // checkBox7
+            // food3fullch
             // 
-            checkBox7.AutoSize = true;
-            checkBox7.Location = new Point(378, 132);
-            checkBox7.Name = "checkBox7";
-            checkBox7.Size = new Size(69, 24);
-            checkBox7.TabIndex = 8;
-            checkBox7.Text = "Бүтэн";
-            checkBox7.UseVisualStyleBackColor = true;
+            food3fullch.AutoSize = true;
+            food3fullch.Location = new Point(378, 132);
+            food3fullch.Name = "food3fullch";
+            food3fullch.Size = new Size(69, 24);
+            food3fullch.TabIndex = 8;
+            food3fullch.Text = "Бүтэн";
+            food3fullch.UseVisualStyleBackColor = true;
+            food3fullch.CheckedChanged += food3fullch_CheckedChanged;
             // 
-            // checkBox6
+            // food2fullch
             // 
-            checkBox6.AutoSize = true;
-            checkBox6.Location = new Point(378, 102);
-            checkBox6.Name = "checkBox6";
-            checkBox6.Size = new Size(69, 24);
-            checkBox6.TabIndex = 7;
-            checkBox6.Text = "Бүтэн";
-            checkBox6.UseVisualStyleBackColor = true;
+            food2fullch.AutoSize = true;
+            food2fullch.Location = new Point(378, 102);
+            food2fullch.Name = "food2fullch";
+            food2fullch.Size = new Size(69, 24);
+            food2fullch.TabIndex = 7;
+            food2fullch.Text = "Бүтэн";
+            food2fullch.UseVisualStyleBackColor = true;
+            food2fullch.CheckedChanged += food2fullch_CheckedChanged;
             // 
-            // checkBox5
+            // food4halfch
             // 
-            checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(178, 160);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(73, 24);
-            checkBox5.TabIndex = 5;
-            checkBox5.Text = "Хагас ";
-            checkBox5.UseVisualStyleBackColor = true;
+            food4halfch.AutoSize = true;
+            food4halfch.Location = new Point(178, 160);
+            food4halfch.Name = "food4halfch";
+            food4halfch.Size = new Size(73, 24);
+            food4halfch.TabIndex = 5;
+            food4halfch.Text = "Хагас ";
+            food4halfch.UseVisualStyleBackColor = true;
+            food4halfch.CheckedChanged += food4halfch_CheckedChanged_1;
             // 
-            // checkBox4
+            // food3halfch
             // 
-            checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(178, 130);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(73, 24);
-            checkBox4.TabIndex = 5;
-            checkBox4.Text = "Хагас ";
-            checkBox4.UseVisualStyleBackColor = true;
+            food3halfch.AutoSize = true;
+            food3halfch.Location = new Point(178, 130);
+            food3halfch.Name = "food3halfch";
+            food3halfch.Size = new Size(73, 24);
+            food3halfch.TabIndex = 5;
+            food3halfch.Text = "Хагас ";
+            food3halfch.UseVisualStyleBackColor = true;
+            food3halfch.CheckedChanged += food3halfch_CheckedChanged;
             // 
-            // checkBox3
+            // food2halfch
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(178, 100);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(73, 24);
-            checkBox3.TabIndex = 6;
-            checkBox3.Text = "Хагас ";
-            checkBox3.UseVisualStyleBackColor = true;
+            food2halfch.AutoSize = true;
+            food2halfch.Location = new Point(178, 100);
+            food2halfch.Name = "food2halfch";
+            food2halfch.Size = new Size(73, 24);
+            food2halfch.TabIndex = 6;
+            food2halfch.Text = "Хагас ";
+            food2halfch.UseVisualStyleBackColor = true;
+            food2halfch.CheckedChanged += food2halfch_CheckedChanged_1;
             // 
-            // checkBox2
+            // food1fullch
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(378, 72);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(69, 24);
-            checkBox2.TabIndex = 5;
-            checkBox2.Text = "Бүтэн";
-            checkBox2.UseVisualStyleBackColor = true;
+            food1fullch.AutoSize = true;
+            food1fullch.Location = new Point(378, 72);
+            food1fullch.Name = "food1fullch";
+            food1fullch.Size = new Size(69, 24);
+            food1fullch.TabIndex = 5;
+            food1fullch.Text = "Бүтэн";
+            food1fullch.UseVisualStyleBackColor = true;
+            food1fullch.CheckedChanged += food1fullch_CheckedChanged_1;
             // 
-            // checkBox1
+            // food1halfch
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(178, 70);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(73, 24);
-            checkBox1.TabIndex = 4;
-            checkBox1.Text = "Хагас ";
-            checkBox1.UseVisualStyleBackColor = true;
-            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
-            // 
-            // radioButton4
-            // 
-            radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(9, 161);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(158, 24);
-            radioButton4.TabIndex = 3;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "Төмсний ороомог\t";
-            radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(9, 131);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(141, 24);
-            radioButton3.TabIndex = 2;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "Будаатай хуурга";
-            radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(9, 101);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(86, 24);
-            radioButton2.TabIndex = 1;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Тефтель";
-            radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(9, 71);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(126, 24);
-            radioButton1.TabIndex = 0;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Гурилтай шөл";
-            radioButton1.UseVisualStyleBackColor = true;
+            food1halfch.AutoSize = true;
+            food1halfch.Location = new Point(178, 70);
+            food1halfch.Name = "food1halfch";
+            food1halfch.Size = new Size(73, 24);
+            food1halfch.TabIndex = 4;
+            food1halfch.Text = "Хагас ";
+            food1halfch.UseVisualStyleBackColor = true;
+            food1halfch.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(checkBox19);
+            groupBox2.Controls.Add(checkBox20);
             groupBox2.Controls.Add(label3);
-            groupBox2.Controls.Add(radioButton7);
+            groupBox2.Controls.Add(checkBox21);
             groupBox2.Controls.Add(label4);
-            groupBox2.Controls.Add(radioButton6);
             groupBox2.Controls.Add(textBox9);
-            groupBox2.Controls.Add(radioButton5);
             groupBox2.Controls.Add(textBox10);
             groupBox2.Controls.Add(checkBox10);
             groupBox2.Controls.Add(textBox11);
@@ -330,6 +340,28 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Зууш";
             // 
+            // checkBox19
+            // 
+            checkBox19.AutoSize = true;
+            checkBox19.Location = new Point(9, 151);
+            checkBox19.Name = "checkBox19";
+            checkBox19.Size = new Size(77, 24);
+            checkBox19.TabIndex = 24;
+            checkBox19.Text = "Кимчи";
+            checkBox19.UseVisualStyleBackColor = true;
+            checkBox19.CheckedChanged += checkBox19_CheckedChanged;
+            // 
+            // checkBox20
+            // 
+            checkBox20.AutoSize = true;
+            checkBox20.Location = new Point(9, 121);
+            checkBox20.Name = "checkBox20";
+            checkBox20.Size = new Size(139, 24);
+            checkBox20.TabIndex = 23;
+            checkBox20.Text = "Чанасан өндөг ";
+            checkBox20.UseVisualStyleBackColor = true;
+            checkBox20.CheckedChanged += checkBox20_CheckedChanged;
+            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -339,16 +371,15 @@
             label3.TabIndex = 31;
             label3.Text = "Тоо ширхэг ";
             // 
-            // radioButton7
+            // checkBox21
             // 
-            radioButton7.AutoSize = true;
-            radioButton7.Location = new Point(9, 148);
-            radioButton7.Name = "radioButton7";
-            radioButton7.Size = new Size(76, 24);
-            radioButton7.TabIndex = 11;
-            radioButton7.TabStop = true;
-            radioButton7.Text = "Кимчи";
-            radioButton7.UseVisualStyleBackColor = true;
+            checkBox21.AutoSize = true;
+            checkBox21.Location = new Point(9, 91);
+            checkBox21.Name = "checkBox21";
+            checkBox21.Size = new Size(135, 24);
+            checkBox21.TabIndex = 22;
+            checkBox21.Text = "Нийслэл салат ";
+            checkBox21.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -359,34 +390,12 @@
             label4.TabIndex = 30;
             label4.Text = "Тоо ширхэг ";
             // 
-            // radioButton6
-            // 
-            radioButton6.AutoSize = true;
-            radioButton6.Location = new Point(6, 118);
-            radioButton6.Name = "radioButton6";
-            radioButton6.Size = new Size(138, 24);
-            radioButton6.TabIndex = 10;
-            radioButton6.TabStop = true;
-            radioButton6.Text = "Чанасан өндөг ";
-            radioButton6.UseVisualStyleBackColor = true;
-            // 
             // textBox9
             // 
             textBox9.Location = new Point(453, 154);
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(40, 27);
             textBox9.TabIndex = 29;
-            // 
-            // radioButton5
-            // 
-            radioButton5.AutoSize = true;
-            radioButton5.Location = new Point(6, 88);
-            radioButton5.Name = "radioButton5";
-            radioButton5.Size = new Size(134, 24);
-            radioButton5.TabIndex = 9;
-            radioButton5.TabStop = true;
-            radioButton5.Text = "Нийслэл салат ";
-            radioButton5.UseVisualStyleBackColor = true;
             // 
             // textBox10
             // 
@@ -483,11 +492,31 @@
             checkBox9.Text = "Бүтэн";
             checkBox9.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            button1.Location = new Point(679, 315);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 42);
+            button1.TabIndex = 2;
+            button1.Text = "Захиалах ";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(679, 370);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 47);
+            button2.TabIndex = 3;
+            button2.Text = "Мэдээлэл";
+            button2.UseVisualStyleBackColor = true;
+            // 
             // FoodForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Name = "FoodForm";
@@ -503,30 +532,23 @@
         #endregion
 
         private GroupBox groupBox1;
-        private RadioButton radioButton1;
-        private RadioButton radioButton4;
-        private RadioButton radioButton3;
-        private RadioButton radioButton2;
-        private CheckBox checkBox2;
-        private CheckBox checkBox1;
-        private CheckBox checkBox8;
-        private CheckBox checkBox7;
-        private CheckBox checkBox6;
-        private CheckBox checkBox5;
-        private CheckBox checkBox4;
-        private CheckBox checkBox3;
+        private CheckBox food1fullch;
+        private CheckBox food1halfch;
+        private CheckBox food4fullch;
+        private CheckBox food3fullch;
+        private CheckBox food2fullch;
+        private CheckBox food4halfch;
+        private CheckBox food3halfch;
+        private CheckBox food2halfch;
         private GroupBox groupBox2;
-        private RadioButton radioButton5;
-        private RadioButton radioButton7;
-        private RadioButton radioButton6;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox food4fullq;
+        private TextBox food3fullq;
+        private TextBox food2fullq;
+        private TextBox food1fullq;
+        private TextBox food4halfq;
+        private TextBox food3halfq;
+        private TextBox food2halfq;
+        private TextBox food1halfq;
         private Label label2;
         private Label label1;
         private Label label3;
@@ -543,5 +565,14 @@
         private TextBox textBox14;
         private CheckBox checkBox11;
         private CheckBox checkBox9;
+        private CheckBox food4;
+        private CheckBox food3;
+        private CheckBox food2;
+        private CheckBox food1;
+        private Button button1;
+        private Button button2;
+        private CheckBox checkBox19;
+        private CheckBox checkBox20;
+        private CheckBox checkBox21;
     }
 }
