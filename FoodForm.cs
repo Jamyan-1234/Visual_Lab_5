@@ -58,7 +58,7 @@ namespace lab5
 
         private void FoodForm_Load(object sender, EventArgs e)
         {
-            food1halfch.Enabled = false;
+            food1halfch.Enabled = false;                      //FOOD
             food1halfq.Enabled = false;        //
             food1fullch.Enabled = false;//
             food1fullq.Enabled = false;
@@ -79,12 +79,30 @@ namespace lab5
             food4halfch.Enabled = false;
             food4halfq.Enabled = false;
             food4fullch.Enabled = false;
-            food4fullq.Enabled = false;
+            food4fullq.Enabled = false;                       //FOOD
 
 
 
 
 
+
+
+
+            zuush1halfch.Enabled = false;                     //ZUUSH
+            zuush1halfq.Enabled = false;        //
+            zuush1fullch.Enabled = false;//
+            zuush1fullq.Enabled = false;
+
+            zuush2halfch.Enabled = false;//
+            zuush2halfq.Enabled = false;
+            zuush2fullch.Enabled = false;//
+            zuush2fullq.Enabled = false;
+
+
+            zuush3halfch.Enabled = false;
+            zuush3halfq.Enabled = false;
+            zuush3fullch.Enabled = false;
+            zuush3fullq.Enabled = false;                     //ZUUSH
 
 
 
@@ -134,15 +152,66 @@ namespace lab5
 
 
 
-
+        ///////////////////////////////////////////////////////////////////////////////////////////////////
         private void checkBox20_CheckedChanged(object sender, EventArgs e)
         {
+            if (zuush2.Checked == true)                               //ZUUSH 2 CHECKBOX 
+            {
+                zuush2halfch.Enabled = true;
+                zuush2halfq.Enabled = false;
+                zuush2fullch.Enabled = true;
 
+
+            }
+            else
+            {
+                zuush2halfch.Enabled = false;
+                zuush2halfq.Enabled = false;                      //ZUUSH 2 CHECKBOX
+                zuush2fullch.Enabled = false;
+                zuush2fullq.Enabled = false;
+
+                zuush2halfch.Checked = false;
+                zuush2halfq.Text = "";
+                zuush2fullch.Checked = false;
+                zuush2fullq.Text = "";                            //ZUUSH 2 CHECKBOX
+                                                                  //
+            }
         }
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+
+
+
+
+
+
+
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
         private void checkBox19_CheckedChanged(object sender, EventArgs e)
         {
+            if (zuush3.Checked == true)                               //ZUUSH 3 CHECKBOX 
+            {
+                zuush3halfch.Enabled = true;
+                zuush3halfq.Enabled = false;
+                zuush3fullch.Enabled = true;
 
+
+            }
+            else
+            {
+                zuush3halfch.Enabled = false;
+                zuush3halfq.Enabled = false;                      //ZUUSH 3 CHECKBOX
+                zuush3fullch.Enabled = false;
+                zuush3fullq.Enabled = false;
+
+                zuush3halfch.Checked = false;
+                zuush3halfq.Text = "";
+                zuush3fullch.Checked = false;
+                zuush3fullq.Text = "";                            //ZUUSH 3 CHECKBOX
+                                                                  //
+            }
         }
 
 
@@ -359,7 +428,7 @@ namespace lab5
                 food3fullq.Text = string.Empty;                  //FOOD 3 FULL CHECKBOX
             }
         }                                                                                                 //
-         ///////////////////////////////////////////////////////////////////////////////////////////////////
+                                                                                                          ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -383,7 +452,15 @@ namespace lab5
 
 
 
-        private void food4fullch_CheckedChanged(object sender, EventArgs e)
+
+
+
+
+
+
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////
+        private void food4fullch_CheckedChanged(object sender, EventArgs e)                                //
         {
             if (food4fullch.Checked == true)                     //FOOD 4 FULL CHECKBOX
             {
@@ -393,6 +470,154 @@ namespace lab5
             {
                 food4fullq.Enabled = false;
                 food4fullq.Text = string.Empty;                  //FOOD 4 FULL CHECKBOX
+            }                                                                                               //
+        }////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////
+        private void zuush1_CheckedChanged(object sender, EventArgs e)                                   //
+        {
+            if (zuush1.Checked == true)                               //ZUUSH 1 CHECKBOX 
+            {
+                zuush1halfch.Enabled = true;
+                zuush1halfq.Enabled = false;
+                zuush1fullch.Enabled = true;
+
+
+            }
+            else
+            {
+                zuush1halfch.Enabled = false;
+                zuush1halfq.Enabled = false;                      //ZUUSH 1 CHECKBOX
+                zuush1fullch.Enabled = false;
+                zuush1fullq.Enabled = false;
+
+                zuush1halfch.Checked = false;
+                zuush1halfq.Text = "";
+                zuush1fullch.Checked = false;
+                zuush1fullq.Text = "";                            //ZUUSH 1 CHECKBOX
+                                                                  //
+            }
+        }///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////
+        private void zuush1halfch_CheckedChanged(object sender, EventArgs e)
+        {
+            if (zuush1halfch.Checked == true)                      //ZUUSH 1 Half checkbox
+            {
+                zuush1halfq.Enabled = true;
+            }                                                      //ZUUSH 1 Half checkbox
+            else
+            {
+                zuush1halfq.Enabled = false;                         //ZUUSH 1 Half checkbox                   //
+            }
+        }
+        ///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////
+        private void zuush1fullch_CheckedChanged(object sender, EventArgs e)
+        {
+            if (zuush1fullch.Checked == true)                     //ZUUSH 1 FULL CHECKBOX
+            {
+                zuush1fullq.Enabled = true;
+            }                                                    //ZUUSH 1 FULL CHECKBOX
+            else
+            {
+                zuush1fullq.Enabled = false;
+                zuush1fullq.Text = string.Empty;                  //ZUUSH 1 FULL CHECKBOX
+            }
+        }
+
+
+
+
+
+
+        private void zuush2halfch_CheckedChanged(object sender, EventArgs e)
+        {
+            if (zuush2halfch.Checked == true)                      //ZUUSH 2 Half checkbox
+            {
+                zuush2halfq.Enabled = true;
+            }                                                      //ZUUSH 2 Half checkbox
+            else
+            {
+                zuush2halfq.Enabled = false;                         //ZUUSH 2 Half checkbox                   //
+            }
+        }
+
+
+
+
+
+        private void zuush2fullch_CheckedChanged(object sender, EventArgs e)
+        {
+            if (zuush2fullch.Checked == true)                     //ZUUSH 2 FULL CHECKBOX
+            {
+                zuush2fullq.Enabled = true;
+            }                                                    //ZUUSH 2 FULL CHECKBOX
+            else
+            {
+                zuush2fullq.Enabled = false;
+                zuush2fullq.Text = string.Empty;                  //ZUUSH 2 FULL CHECKBOX
+            }
+        }
+
+
+
+
+
+
+
+        private void zuush3halfch_CheckedChanged(object sender, EventArgs e)
+        {
+            if (zuush3halfch.Checked == true)                      //ZUUSH 3 Half checkbox
+            {
+                zuush3halfq.Enabled = true;
+            }                                                      //ZUUSH 3 Half checkbox
+            else
+            {
+                zuush3halfq.Enabled = false;                         //ZUUSH 3 Half checkbox                   //
+            }
+        }
+
+        private void zuush3fullch_CheckedChanged(object sender, EventArgs e)
+        {
+            if (zuush3fullch.Checked == true)                     //ZUUSH 3 FULL CHECKBOX
+            {
+                zuush3fullq.Enabled = true;
+            }                                                    //ZUUSH 3 FULL CHECKBOX
+            else
+            {
+                zuush3fullq.Enabled = false;
+                zuush3fullq.Text = string.Empty;                  //ZUUSH 3 FULL CHECKBOX
             }
         }
     }

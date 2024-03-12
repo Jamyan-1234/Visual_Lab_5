@@ -52,23 +52,23 @@
             food1fullch = new CheckBox();
             food1halfch = new CheckBox();
             groupBox2 = new GroupBox();
-            checkBox19 = new CheckBox();
-            checkBox20 = new CheckBox();
+            zuush3 = new CheckBox();
+            zuush2 = new CheckBox();
             label3 = new Label();
-            checkBox21 = new CheckBox();
+            zuush1 = new CheckBox();
             label4 = new Label();
-            textBox9 = new TextBox();
-            textBox10 = new TextBox();
-            checkBox10 = new CheckBox();
-            textBox11 = new TextBox();
-            checkBox14 = new CheckBox();
-            textBox12 = new TextBox();
-            checkBox13 = new CheckBox();
-            textBox13 = new TextBox();
-            checkBox12 = new CheckBox();
-            textBox14 = new TextBox();
-            checkBox11 = new CheckBox();
-            checkBox9 = new CheckBox();
+            zuush3fullq = new TextBox();
+            zuush2fullq = new TextBox();
+            zuush2fullch = new CheckBox();
+            zuush1fullq = new TextBox();
+            zuush1halfch = new CheckBox();
+            zuush3halfq = new TextBox();
+            zuush1fullch = new CheckBox();
+            zuush2halfq = new TextBox();
+            zuush2halfch = new CheckBox();
+            zuush1halfq = new TextBox();
+            zuush3halfch = new CheckBox();
+            zuush3fullch = new CheckBox();
             button1 = new Button();
             button2 = new Button();
             groupBox1.SuspendLayout();
@@ -154,11 +154,12 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(420, 23);
+            label2.Location = new Point(427, 23);
             label2.Name = "label2";
             label2.Size = new Size(93, 20);
             label2.TabIndex = 17;
             label2.Text = "Тоо ширхэг ";
+            label2.Click += label2_Click;
             // 
             // label1
             // 
@@ -316,23 +317,23 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(checkBox19);
-            groupBox2.Controls.Add(checkBox20);
+            groupBox2.Controls.Add(zuush3);
+            groupBox2.Controls.Add(zuush2);
             groupBox2.Controls.Add(label3);
-            groupBox2.Controls.Add(checkBox21);
+            groupBox2.Controls.Add(zuush1);
             groupBox2.Controls.Add(label4);
-            groupBox2.Controls.Add(textBox9);
-            groupBox2.Controls.Add(textBox10);
-            groupBox2.Controls.Add(checkBox10);
-            groupBox2.Controls.Add(textBox11);
-            groupBox2.Controls.Add(checkBox14);
-            groupBox2.Controls.Add(textBox12);
-            groupBox2.Controls.Add(checkBox13);
-            groupBox2.Controls.Add(textBox13);
-            groupBox2.Controls.Add(checkBox12);
-            groupBox2.Controls.Add(textBox14);
-            groupBox2.Controls.Add(checkBox11);
-            groupBox2.Controls.Add(checkBox9);
+            groupBox2.Controls.Add(zuush3fullq);
+            groupBox2.Controls.Add(zuush2fullq);
+            groupBox2.Controls.Add(zuush2fullch);
+            groupBox2.Controls.Add(zuush1fullq);
+            groupBox2.Controls.Add(zuush1halfch);
+            groupBox2.Controls.Add(zuush3halfq);
+            groupBox2.Controls.Add(zuush1fullch);
+            groupBox2.Controls.Add(zuush2halfq);
+            groupBox2.Controls.Add(zuush2halfch);
+            groupBox2.Controls.Add(zuush1halfq);
+            groupBox2.Controls.Add(zuush3halfch);
+            groupBox2.Controls.Add(zuush3fullch);
             groupBox2.Location = new Point(27, 236);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(526, 202);
@@ -340,157 +341,164 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Зууш";
             // 
-            // checkBox19
+            // zuush3
             // 
-            checkBox19.AutoSize = true;
-            checkBox19.Location = new Point(9, 151);
-            checkBox19.Name = "checkBox19";
-            checkBox19.Size = new Size(77, 24);
-            checkBox19.TabIndex = 24;
-            checkBox19.Text = "Кимчи";
-            checkBox19.UseVisualStyleBackColor = true;
-            checkBox19.CheckedChanged += checkBox19_CheckedChanged;
+            zuush3.AutoSize = true;
+            zuush3.Location = new Point(9, 151);
+            zuush3.Name = "zuush3";
+            zuush3.Size = new Size(77, 24);
+            zuush3.TabIndex = 24;
+            zuush3.Text = "Кимчи";
+            zuush3.UseVisualStyleBackColor = true;
+            zuush3.CheckedChanged += checkBox19_CheckedChanged;
             // 
-            // checkBox20
+            // zuush2
             // 
-            checkBox20.AutoSize = true;
-            checkBox20.Location = new Point(9, 121);
-            checkBox20.Name = "checkBox20";
-            checkBox20.Size = new Size(139, 24);
-            checkBox20.TabIndex = 23;
-            checkBox20.Text = "Чанасан өндөг ";
-            checkBox20.UseVisualStyleBackColor = true;
-            checkBox20.CheckedChanged += checkBox20_CheckedChanged;
+            zuush2.AutoSize = true;
+            zuush2.Location = new Point(9, 121);
+            zuush2.Name = "zuush2";
+            zuush2.Size = new Size(139, 24);
+            zuush2.TabIndex = 23;
+            zuush2.Text = "Чанасан өндөг ";
+            zuush2.UseVisualStyleBackColor = true;
+            zuush2.CheckedChanged += checkBox20_CheckedChanged;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(420, 44);
+            label3.Location = new Point(427, 44);
             label3.Name = "label3";
             label3.Size = new Size(93, 20);
             label3.TabIndex = 31;
             label3.Text = "Тоо ширхэг ";
             // 
-            // checkBox21
+            // zuush1
             // 
-            checkBox21.AutoSize = true;
-            checkBox21.Location = new Point(9, 91);
-            checkBox21.Name = "checkBox21";
-            checkBox21.Size = new Size(135, 24);
-            checkBox21.TabIndex = 22;
-            checkBox21.Text = "Нийслэл салат ";
-            checkBox21.UseVisualStyleBackColor = true;
+            zuush1.AutoSize = true;
+            zuush1.Location = new Point(9, 91);
+            zuush1.Name = "zuush1";
+            zuush1.Size = new Size(135, 24);
+            zuush1.TabIndex = 22;
+            zuush1.Text = "Нийслэл салат ";
+            zuush1.UseVisualStyleBackColor = true;
+            zuush1.CheckedChanged += zuush1_CheckedChanged;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(229, 44);
+            label4.Location = new Point(238, 44);
             label4.Name = "label4";
             label4.Size = new Size(93, 20);
             label4.TabIndex = 30;
             label4.Text = "Тоо ширхэг ";
             // 
-            // textBox9
+            // zuush3fullq
             // 
-            textBox9.Location = new Point(453, 154);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(40, 27);
-            textBox9.TabIndex = 29;
+            zuush3fullq.Location = new Point(453, 154);
+            zuush3fullq.Name = "zuush3fullq";
+            zuush3fullq.Size = new Size(40, 27);
+            zuush3fullq.TabIndex = 29;
             // 
-            // textBox10
+            // zuush2fullq
             // 
-            textBox10.Location = new Point(453, 124);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(40, 27);
-            textBox10.TabIndex = 28;
+            zuush2fullq.Location = new Point(453, 124);
+            zuush2fullq.Name = "zuush2fullq";
+            zuush2fullq.Size = new Size(40, 27);
+            zuush2fullq.TabIndex = 28;
             // 
-            // checkBox10
+            // zuush2fullch
             // 
-            checkBox10.AutoSize = true;
-            checkBox10.Location = new Point(378, 123);
-            checkBox10.Name = "checkBox10";
-            checkBox10.Size = new Size(69, 24);
-            checkBox10.TabIndex = 23;
-            checkBox10.Text = "Бүтэн";
-            checkBox10.UseVisualStyleBackColor = true;
+            zuush2fullch.AutoSize = true;
+            zuush2fullch.Location = new Point(378, 123);
+            zuush2fullch.Name = "zuush2fullch";
+            zuush2fullch.Size = new Size(69, 24);
+            zuush2fullch.TabIndex = 23;
+            zuush2fullch.Text = "Бүтэн";
+            zuush2fullch.UseVisualStyleBackColor = true;
+            zuush2fullch.CheckedChanged += zuush2fullch_CheckedChanged;
             // 
-            // textBox11
+            // zuush1fullq
             // 
-            textBox11.Location = new Point(453, 91);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(40, 27);
-            textBox11.TabIndex = 27;
+            zuush1fullq.Location = new Point(453, 91);
+            zuush1fullq.Name = "zuush1fullq";
+            zuush1fullq.Size = new Size(40, 27);
+            zuush1fullq.TabIndex = 27;
             // 
-            // checkBox14
+            // zuush1halfch
             // 
-            checkBox14.AutoSize = true;
-            checkBox14.Location = new Point(178, 91);
-            checkBox14.Name = "checkBox14";
-            checkBox14.Size = new Size(73, 24);
-            checkBox14.TabIndex = 19;
-            checkBox14.Text = "Хагас ";
-            checkBox14.UseVisualStyleBackColor = true;
+            zuush1halfch.AutoSize = true;
+            zuush1halfch.Location = new Point(178, 91);
+            zuush1halfch.Name = "zuush1halfch";
+            zuush1halfch.Size = new Size(73, 24);
+            zuush1halfch.TabIndex = 19;
+            zuush1halfch.Text = "Хагас ";
+            zuush1halfch.UseVisualStyleBackColor = true;
+            zuush1halfch.CheckedChanged += zuush1halfch_CheckedChanged;
             // 
-            // textBox12
+            // zuush3halfq
             // 
-            textBox12.Location = new Point(257, 151);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(40, 27);
-            textBox12.TabIndex = 26;
+            zuush3halfq.Location = new Point(257, 151);
+            zuush3halfq.Name = "zuush3halfq";
+            zuush3halfq.Size = new Size(40, 27);
+            zuush3halfq.TabIndex = 26;
             // 
-            // checkBox13
+            // zuush1fullch
             // 
-            checkBox13.AutoSize = true;
-            checkBox13.Location = new Point(378, 93);
-            checkBox13.Name = "checkBox13";
-            checkBox13.Size = new Size(69, 24);
-            checkBox13.TabIndex = 21;
-            checkBox13.Text = "Бүтэн";
-            checkBox13.UseVisualStyleBackColor = true;
+            zuush1fullch.AutoSize = true;
+            zuush1fullch.Location = new Point(378, 93);
+            zuush1fullch.Name = "zuush1fullch";
+            zuush1fullch.Size = new Size(69, 24);
+            zuush1fullch.TabIndex = 21;
+            zuush1fullch.Text = "Бүтэн";
+            zuush1fullch.UseVisualStyleBackColor = true;
+            zuush1fullch.CheckedChanged += zuush1fullch_CheckedChanged;
             // 
-            // textBox13
+            // zuush2halfq
             // 
-            textBox13.Location = new Point(257, 121);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(40, 27);
-            textBox13.TabIndex = 25;
+            zuush2halfq.Location = new Point(257, 121);
+            zuush2halfq.Name = "zuush2halfq";
+            zuush2halfq.Size = new Size(40, 27);
+            zuush2halfq.TabIndex = 25;
             // 
-            // checkBox12
+            // zuush2halfch
             // 
-            checkBox12.AutoSize = true;
-            checkBox12.Location = new Point(178, 121);
-            checkBox12.Name = "checkBox12";
-            checkBox12.Size = new Size(73, 24);
-            checkBox12.TabIndex = 22;
-            checkBox12.Text = "Хагас ";
-            checkBox12.UseVisualStyleBackColor = true;
+            zuush2halfch.AutoSize = true;
+            zuush2halfch.Location = new Point(178, 121);
+            zuush2halfch.Name = "zuush2halfch";
+            zuush2halfch.Size = new Size(73, 24);
+            zuush2halfch.TabIndex = 22;
+            zuush2halfch.Text = "Хагас ";
+            zuush2halfch.UseVisualStyleBackColor = true;
+            zuush2halfch.CheckedChanged += zuush2halfch_CheckedChanged;
             // 
-            // textBox14
+            // zuush1halfq
             // 
-            textBox14.Location = new Point(257, 88);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(40, 27);
-            textBox14.TabIndex = 18;
+            zuush1halfq.Location = new Point(257, 88);
+            zuush1halfq.Name = "zuush1halfq";
+            zuush1halfq.Size = new Size(40, 27);
+            zuush1halfq.TabIndex = 18;
             // 
-            // checkBox11
+            // zuush3halfch
             // 
-            checkBox11.AutoSize = true;
-            checkBox11.Location = new Point(178, 151);
-            checkBox11.Name = "checkBox11";
-            checkBox11.Size = new Size(73, 24);
-            checkBox11.TabIndex = 20;
-            checkBox11.Text = "Хагас ";
-            checkBox11.UseVisualStyleBackColor = true;
+            zuush3halfch.AutoSize = true;
+            zuush3halfch.Location = new Point(178, 151);
+            zuush3halfch.Name = "zuush3halfch";
+            zuush3halfch.Size = new Size(73, 24);
+            zuush3halfch.TabIndex = 20;
+            zuush3halfch.Text = "Хагас ";
+            zuush3halfch.UseVisualStyleBackColor = true;
+            zuush3halfch.CheckedChanged += zuush3halfch_CheckedChanged;
             // 
-            // checkBox9
+            // zuush3fullch
             // 
-            checkBox9.AutoSize = true;
-            checkBox9.Location = new Point(378, 153);
-            checkBox9.Name = "checkBox9";
-            checkBox9.Size = new Size(69, 24);
-            checkBox9.TabIndex = 24;
-            checkBox9.Text = "Бүтэн";
-            checkBox9.UseVisualStyleBackColor = true;
+            zuush3fullch.AutoSize = true;
+            zuush3fullch.Location = new Point(378, 153);
+            zuush3fullch.Name = "zuush3fullch";
+            zuush3fullch.Size = new Size(69, 24);
+            zuush3fullch.TabIndex = 24;
+            zuush3fullch.Text = "Бүтэн";
+            zuush3fullch.UseVisualStyleBackColor = true;
+            zuush3fullch.CheckedChanged += zuush3fullch_CheckedChanged;
             // 
             // button1
             // 
@@ -553,26 +561,26 @@
         private Label label1;
         private Label label3;
         private Label label4;
-        private TextBox textBox9;
-        private TextBox textBox10;
-        private CheckBox checkBox10;
-        private TextBox textBox11;
-        private CheckBox checkBox14;
-        private TextBox textBox12;
-        private CheckBox checkBox13;
-        private TextBox textBox13;
-        private CheckBox checkBox12;
-        private TextBox textBox14;
-        private CheckBox checkBox11;
-        private CheckBox checkBox9;
+        private TextBox zuush3fullq;
+        private TextBox zuush2fullq;
+        private CheckBox zuush2fullch;
+        private TextBox zuush1fullq;
+        private CheckBox zuush1halfch;
+        private TextBox zuush3halfq;
+        private CheckBox zuush1fullch;
+        private TextBox zuush2halfq;
+        private CheckBox zuush2halfch;
+        private TextBox zuush1halfq;
+        private CheckBox zuush3halfch;
+        private CheckBox zuush3fullch;
         private CheckBox food4;
         private CheckBox food3;
         private CheckBox food2;
         private CheckBox food1;
         private Button button1;
         private Button button2;
-        private CheckBox checkBox19;
-        private CheckBox checkBox20;
-        private CheckBox checkBox21;
+        private CheckBox zuush3;
+        private CheckBox zuush2;
+        private CheckBox zuush1;
     }
 }
