@@ -116,6 +116,7 @@
             twelveOunceRadioButton.TabStop = true;
             twelveOunceRadioButton.Text = "12 &Ounce";
             twelveOunceRadioButton.UseVisualStyleBackColor = true;
+            twelveOunceRadioButton.CheckedChanged += twelveOunceRadioButton_CheckedChanged;
             // 
             // groupBox2
             // 
