@@ -105,7 +105,7 @@ namespace lab5
 
         private void FoodForm_Load(object sender, EventArgs e)
         {
-            food1halfch.Enabled = false;                      //FOOD//
+            food1halfch.Enabled = false;                      //FOOD
             food1halfq.Enabled = false;        //
             food1halfq.Text = "0";
             food1fullch.Enabled = false;//
