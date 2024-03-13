@@ -18,6 +18,22 @@ namespace lab5
         {
             InitializeComponent();
         }
+        double food1_half_price = 22;
+        double food1_full_price = 31;
+
+        double food2_half_price = 17;
+        double food2_full_price = 24;
+
+        double food3_half_price = 14;
+        double food3_full_price = 28;
+
+        double food4_half_price = 17;
+        double food4_full_price = 24;
+
+        double total_price;
+        double total_item;
+
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -44,10 +60,12 @@ namespace lab5
             if (food1halfch.Checked == true)                      //Food1Halfcheckbox
             {
                 food1halfq.Enabled = true;
+                food1halfq.Text = "0";
             }                                                      //Food1Halfcheckbox
             else
             {
                 food1halfq.Enabled = false;                         //Food1Halfcheckbox                   //
+                food1halfq.Text = "0";
             }                                                                         //
         }///////////////////////////////////////////////////////////////////////////////
 
@@ -103,6 +121,8 @@ namespace lab5
             zuush3halfq.Enabled = false;
             zuush3fullch.Enabled = false;
             zuush3fullq.Enabled = false;                     //ZUUSH
+
+
 
 
 
@@ -369,10 +389,12 @@ namespace lab5
             if (food2halfch.Checked == true)                      //Food2Halfcheckbox
             {
                 food2halfq.Enabled = true;
+                food2halfq.Text = "0";
             }                                                      //Food2Halfcheckbox
             else
             {
-                food2halfq.Enabled = false;                         //Food2Halfcheckbox                   
+                food2halfq.Enabled = false;                         //Food2Halfcheckbox
+                food2halfq.Text = "0";
             }                                                                                    //
         }///////////////////////////////////////////////////////////////////////////////////////////
 
@@ -619,6 +641,124 @@ namespace lab5
                 zuush3fullq.Enabled = false;
                 zuush3fullq.Text = string.Empty;                  //ZUUSH 3 FULL CHECKBOX
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+
+
+            ////////////////////////////////////////////////////////////////////////////////////
+            double food1halfquantity = double.Parse(food1halfq.Text);                         ///
+            double food1halfquantity_and_price = food1halfquantity * food1_half_price;
+
+            double food1fullquantity = double.Parse(food1fullq.Text);
+            double food1fullquantity_and_price = food1fullquantity * food1_full_price;
+            if (food1halfch.Checked == true && food1halfquantity > -1)
+            {
+                total_item = total_item + food1halfquantity;
+            }
+
+            if (food1fullch.Checked == true && food1fullquantity > -1)
+            {
+                total_item = total_item + food1fullquantity;
+            }                                                                             //
+            ///////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+            ///////////////////////////////////////////////////////////////////////////////////
+            double food2halfquantity = double.Parse(food2halfq.Text);
+            double food2halfquantity_and_price = food2halfquantity * food2_half_price;
+
+            double food2fullquantity = double.Parse(food2fullq.Text);
+            double food2fullquantity_and_price = food2fullquantity * food2_full_price;
+            if (food2halfch.Checked == true && food2halfquantity > -1)
+            {
+                total_item = total_item + food2halfquantity;
+            }
+
+            if (food2fullch.Checked == true && food2fullquantity > -1)
+            {
+                total_item = total_item + food2fullquantity;
+            }
+            ///////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+            ////////////////////////////////////////////////////////////////////////////////////
+            double food3halfquantity = double.Parse(food3halfq.Text);                         ///
+            double food3halfquantity_and_price = food3halfquantity * food3_half_price;
+
+            double food3fullquantity = double.Parse(food3fullq.Text);
+            double food3fullquantity_and_price = food3fullquantity * food3_full_price;
+            if (food3halfch.Checked == true && food3halfquantity > -1)
+            {
+                total_item = total_item + food3halfquantity;
+            }
+
+            if (food3fullch.Checked == true && food3fullquantity > -1)
+            {
+                total_item = total_item + food3fullquantity;
+            }                                                                             //
+            ///////////////////////////////////////////////////////////////////////////////
+
+
+
+
+            ////////////////////////////////////////////////////////////////////////////////////
+            double food4halfquantity = double.Parse(food4halfq.Text);                         ///
+            double food4halfquantity_and_price = food4halfquantity * food4_half_price;
+
+            double food4fullquantity = double.Parse(food4fullq.Text);
+            double food4fullquantity_and_price = food4fullquantity * food4_full_price;
+            if (food4halfch.Checked == true && food4halfquantity > -1)
+            {
+                total_item = total_item + food4halfquantity;
+            }
+
+            if (food4fullch.Checked == true && food4fullquantity > -1)
+            {
+                total_item = total_item + food4fullquantity;
+            }                                                                             //
+            ///////////////////////////////////////////////////////////////////////////////
+            ///
+
+
+
+
+
+
+            MessageBox.Show("Та нийт:  " + total_item+ " ширхэг хоол захиаллаа/n"+
+               "hehe" );
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
