@@ -29,6 +29,15 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            label13 = new Label();
+            label12 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
             food4 = new CheckBox();
             food3 = new CheckBox();
             food2 = new CheckBox();
@@ -52,7 +61,13 @@
             food1fullch = new CheckBox();
             food1halfch = new CheckBox();
             groupBox2 = new GroupBox();
+            label17 = new Label();
+            label18 = new Label();
+            label19 = new Label();
+            label14 = new Label();
             zuush3 = new CheckBox();
+            label15 = new Label();
+            label16 = new Label();
             zuush2 = new CheckBox();
             label3 = new Label();
             zuush1 = new CheckBox();
@@ -77,6 +92,15 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(label13);
+            groupBox1.Controls.Add(label12);
+            groupBox1.Controls.Add(label11);
+            groupBox1.Controls.Add(label10);
+            groupBox1.Controls.Add(label9);
+            groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(label7);
+            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(food4);
             groupBox1.Controls.Add(food3);
             groupBox1.Controls.Add(food2);
@@ -101,11 +125,91 @@
             groupBox1.Controls.Add(food1halfch);
             groupBox1.Location = new Point(27, 23);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(526, 207);
+            groupBox1.Size = new Size(638, 207);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Үндсэн хоол";
             groupBox1.Enter += groupBox1_Enter;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(294, 164);
+            label13.Name = "label13";
+            label13.Size = new Size(105, 20);
+            label13.TabIndex = 31;
+            label13.Text = "17$ (1ширхэг)";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(526, 163);
+            label12.Name = "label12";
+            label12.Size = new Size(105, 20);
+            label12.TabIndex = 30;
+            label12.Text = "24$ (1ширхэг)";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(526, 131);
+            label11.Name = "label11";
+            label11.Size = new Size(105, 20);
+            label11.TabIndex = 29;
+            label11.Text = "28$ (1ширхэг)";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(294, 133);
+            label10.Name = "label10";
+            label10.Size = new Size(105, 20);
+            label10.TabIndex = 28;
+            label10.Text = "14$ (1ширхэг)";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(526, 99);
+            label9.Name = "label9";
+            label9.Size = new Size(105, 20);
+            label9.TabIndex = 27;
+            label9.Text = "24$ (1ширхэг)";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(294, 103);
+            label8.Name = "label8";
+            label8.Size = new Size(105, 20);
+            label8.TabIndex = 26;
+            label8.Text = "17$ (1ширхэг)";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(526, 69);
+            label7.Name = "label7";
+            label7.Size = new Size(105, 20);
+            label7.TabIndex = 25;
+            label7.Text = "31$ (1ширхэг)";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(294, 72);
+            label6.Name = "label6";
+            label6.Size = new Size(105, 20);
+            label6.TabIndex = 24;
+            label6.Text = "22$ (1ширхэг)";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(329, 72);
+            label5.Name = "label5";
+            label5.Size = new Size(0, 20);
+            label5.TabIndex = 23;
             // 
             // food4
             // 
@@ -154,7 +258,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(427, 23);
+            label2.Location = new Point(454, 20);
             label2.Name = "label2";
             label2.Size = new Size(93, 20);
             label2.TabIndex = 17;
@@ -172,28 +276,28 @@
             // 
             // food4fullq
             // 
-            food4fullq.Location = new Point(453, 166);
+            food4fullq.Location = new Point(480, 163);
             food4fullq.Name = "food4fullq";
             food4fullq.Size = new Size(40, 27);
             food4fullq.TabIndex = 15;
             // 
             // food3fullq
             // 
-            food3fullq.Location = new Point(453, 133);
+            food3fullq.Location = new Point(480, 130);
             food3fullq.Name = "food3fullq";
             food3fullq.Size = new Size(40, 27);
             food3fullq.TabIndex = 14;
             // 
             // food2fullq
             // 
-            food2fullq.Location = new Point(453, 103);
+            food2fullq.Location = new Point(480, 100);
             food2fullq.Name = "food2fullq";
             food2fullq.Size = new Size(40, 27);
             food2fullq.TabIndex = 13;
             // 
             // food1fullq
             // 
-            food1fullq.Location = new Point(453, 70);
+            food1fullq.Location = new Point(480, 67);
             food1fullq.Name = "food1fullq";
             food1fullq.Size = new Size(40, 27);
             food1fullq.TabIndex = 12;
@@ -230,7 +334,7 @@
             // food4fullch
             // 
             food4fullch.AutoSize = true;
-            food4fullch.Location = new Point(378, 162);
+            food4fullch.Location = new Point(405, 159);
             food4fullch.Name = "food4fullch";
             food4fullch.Size = new Size(69, 24);
             food4fullch.TabIndex = 8;
@@ -241,7 +345,7 @@
             // food3fullch
             // 
             food3fullch.AutoSize = true;
-            food3fullch.Location = new Point(378, 132);
+            food3fullch.Location = new Point(405, 129);
             food3fullch.Name = "food3fullch";
             food3fullch.Size = new Size(69, 24);
             food3fullch.TabIndex = 8;
@@ -252,7 +356,7 @@
             // food2fullch
             // 
             food2fullch.AutoSize = true;
-            food2fullch.Location = new Point(378, 102);
+            food2fullch.Location = new Point(405, 99);
             food2fullch.Name = "food2fullch";
             food2fullch.Size = new Size(69, 24);
             food2fullch.TabIndex = 7;
@@ -296,7 +400,7 @@
             // food1fullch
             // 
             food1fullch.AutoSize = true;
-            food1fullch.Location = new Point(378, 72);
+            food1fullch.Location = new Point(405, 69);
             food1fullch.Name = "food1fullch";
             food1fullch.Size = new Size(69, 24);
             food1fullch.TabIndex = 5;
@@ -317,7 +421,13 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(label17);
+            groupBox2.Controls.Add(label18);
+            groupBox2.Controls.Add(label19);
+            groupBox2.Controls.Add(label14);
             groupBox2.Controls.Add(zuush3);
+            groupBox2.Controls.Add(label15);
+            groupBox2.Controls.Add(label16);
             groupBox2.Controls.Add(zuush2);
             groupBox2.Controls.Add(label3);
             groupBox2.Controls.Add(zuush1);
@@ -336,10 +446,46 @@
             groupBox2.Controls.Add(zuush3fullch);
             groupBox2.Location = new Point(27, 236);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(526, 202);
+            groupBox2.Size = new Size(638, 202);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Зууш";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(526, 153);
+            label17.Name = "label17";
+            label17.Size = new Size(105, 20);
+            label17.TabIndex = 37;
+            label17.Text = "17$ (1ширхэг)";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(526, 122);
+            label18.Name = "label18";
+            label18.Size = new Size(105, 20);
+            label18.TabIndex = 36;
+            label18.Text = "14$ (1ширхэг)";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(526, 92);
+            label19.Name = "label19";
+            label19.Size = new Size(105, 20);
+            label19.TabIndex = 35;
+            label19.Text = "10$ (1ширхэг)";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(294, 153);
+            label14.Name = "label14";
+            label14.Size = new Size(105, 20);
+            label14.TabIndex = 34;
+            label14.Text = "17$ (1ширхэг)";
             // 
             // zuush3
             // 
@@ -351,6 +497,24 @@
             zuush3.Text = "Кимчи";
             zuush3.UseVisualStyleBackColor = true;
             zuush3.CheckedChanged += checkBox19_CheckedChanged;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(294, 122);
+            label15.Name = "label15";
+            label15.Size = new Size(105, 20);
+            label15.TabIndex = 33;
+            label15.Text = "14$ (1ширхэг)";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(294, 92);
+            label16.Name = "label16";
+            label16.Size = new Size(97, 20);
+            label16.TabIndex = 32;
+            label16.Text = "5$ (1ширхэг)";
             // 
             // zuush2
             // 
@@ -366,7 +530,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(427, 44);
+            label3.Location = new Point(454, 41);
             label3.Name = "label3";
             label3.Size = new Size(93, 20);
             label3.TabIndex = 31;
@@ -394,22 +558,23 @@
             // 
             // zuush3fullq
             // 
-            zuush3fullq.Location = new Point(453, 154);
+            zuush3fullq.Location = new Point(480, 151);
             zuush3fullq.Name = "zuush3fullq";
             zuush3fullq.Size = new Size(40, 27);
             zuush3fullq.TabIndex = 29;
             // 
             // zuush2fullq
             // 
-            zuush2fullq.Location = new Point(453, 124);
+            zuush2fullq.Location = new Point(480, 121);
             zuush2fullq.Name = "zuush2fullq";
             zuush2fullq.Size = new Size(40, 27);
             zuush2fullq.TabIndex = 28;
+            zuush2fullq.TextChanged += zuush2fullq_TextChanged;
             // 
             // zuush2fullch
             // 
             zuush2fullch.AutoSize = true;
-            zuush2fullch.Location = new Point(378, 123);
+            zuush2fullch.Location = new Point(405, 120);
             zuush2fullch.Name = "zuush2fullch";
             zuush2fullch.Size = new Size(69, 24);
             zuush2fullch.TabIndex = 23;
@@ -419,7 +584,7 @@
             // 
             // zuush1fullq
             // 
-            zuush1fullq.Location = new Point(453, 91);
+            zuush1fullq.Location = new Point(480, 88);
             zuush1fullq.Name = "zuush1fullq";
             zuush1fullq.Size = new Size(40, 27);
             zuush1fullq.TabIndex = 27;
@@ -445,7 +610,7 @@
             // zuush1fullch
             // 
             zuush1fullch.AutoSize = true;
-            zuush1fullch.Location = new Point(378, 93);
+            zuush1fullch.Location = new Point(405, 90);
             zuush1fullch.Name = "zuush1fullch";
             zuush1fullch.Size = new Size(69, 24);
             zuush1fullch.TabIndex = 21;
@@ -459,6 +624,7 @@
             zuush2halfq.Name = "zuush2halfq";
             zuush2halfq.Size = new Size(40, 27);
             zuush2halfq.TabIndex = 25;
+            zuush2halfq.TextChanged += zuush2halfq_TextChanged;
             // 
             // zuush2halfch
             // 
@@ -477,6 +643,7 @@
             zuush1halfq.Name = "zuush1halfq";
             zuush1halfq.Size = new Size(40, 27);
             zuush1halfq.TabIndex = 18;
+            zuush1halfq.TextChanged += zuush1halfq_TextChanged;
             // 
             // zuush3halfch
             // 
@@ -492,7 +659,7 @@
             // zuush3fullch
             // 
             zuush3fullch.AutoSize = true;
-            zuush3fullch.Location = new Point(378, 153);
+            zuush3fullch.Location = new Point(405, 150);
             zuush3fullch.Name = "zuush3fullch";
             zuush3fullch.Size = new Size(69, 24);
             zuush3fullch.TabIndex = 24;
@@ -502,21 +669,21 @@
             // 
             // button1
             // 
-            button1.Location = new Point(670, 46);
+            button1.Location = new Point(680, 310);
             button1.Name = "button1";
             button1.Size = new Size(94, 42);
             button1.TabIndex = 2;
-            button1.Text = "Захиалах ";
+            button1.Text = "Мэдээлэл ";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(679, 370);
+            button2.Location = new Point(680, 358);
             button2.Name = "button2";
             button2.Size = new Size(94, 47);
             button2.TabIndex = 3;
-            button2.Text = "Мэдээлэл";
+            button2.Text = "Захиалах";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
@@ -584,5 +751,20 @@
         private CheckBox zuush3;
         private CheckBox zuush2;
         private CheckBox zuush1;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label9;
+        private Label label8;
+        private Label label11;
+        private Label label10;
+        private Label label13;
+        private Label label12;
+        private Label label17;
+        private Label label18;
+        private Label label19;
+        private Label label14;
+        private Label label15;
+        private Label label16;
     }
 }
